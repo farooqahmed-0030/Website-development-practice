@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lecture 9 Payment Form</title>
+    <style>
+      h2{
+        color:rgb(9, 6, 240);
+        font-family: Arial, Helvetica, sans-serif ;
+        line-height: 0cqmax;
+      }
+      *{
+        box-sizing: border-box;
+      }
+      body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin 15px 30px;
+        font-size: 17px;
+        padding:8px;
+      }
+      .container{
+        background-color: rgb(97, 211, 226);
+        padding: 5px 20px 15px 20px;
+        border: 2px solid green;
+        border border-radius: 10px;
+      }
+      #address{
+
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      input[type="password"],
+      input[type="date"],
+      select,
+      textarea{
+        width: 500px;
+        padding: 5px;
+        border: 2px solid red;
+        border-radius: 10px;
+        margin: 10px;
+}
+.fieldset{
+  background-color: aqua;
+  border: 2px solid gold;
+}
+.mainheading{
+  text-align: center;
+  color: red;
+}
+input[type="submit"]{
+  background-color: rgba(5, 228, 42, 0.89);
+  color: darkgoldenrod;
+  padding: 10px 15px;
+  border:none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 80px;
+}
+input[type="submit"]:hover{
+  background-color: rgb(238, 10, 10);
+}
+.blue{
+  text-color: rgb(0, 13, 128);
+}
+
+
+    </style>
+</head>
+<body>
+  <div class="container">
+    <form action="">
+        <h1 class="mainheading">Payment Form</h1>
+        <p>Required Fields are followed by *</p>
+    <h2>Contact information</h2>
+    <p>Name: *<input type="text" name="name" required placeholder="Om pandi"></p>
+   <fieldste>
+    <legend>Gender: *</legend>
+    <p>Male: <input type="radio" name="gender" id="male" required >
+    <p>Female: <input type="radio" name="gender" id="Female" required ></p>
+    <p>Transgender: <input type="radio" name="gender" id="Female" required ></p>
+</p>
+</fieldste>
+
+    <p>
+      Address : *<br><textarea name="address" id="address" cols="50" rows="8" required></textarea>
+    </p>
+    <p>Email: *<input type="email" name="email" id="email" required></p>
+    <p>Pincode: *<input type="number" name="pincode" id="pincode" required ></p>
+    <p>Card Type:*
+      <select name="card_type" id="card_type" required >
+        <option value="">Select a Card Type</option>
+        <option value="Visa">Visa</option>
+        <option value="Rupay">Rupay</option>
+        <option value="Master Card">Master Card</option>
+      </select>
+    </p>
+    <p>Card Number: *<input type="number" name="card number" id="card number" required ></p>
+    <p><input type="submit" value="Submit"></p>
+    
+  
+  
+</form>
+</div>
+</body>
+</html>
